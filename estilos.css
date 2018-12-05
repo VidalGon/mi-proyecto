@@ -1,5 +1,170 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-h1,h1,h3,h4,h5,h6{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+body{
+	text-align: center;
+	font: 25px Arial,Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
 
+}
+/*Estilos globales*/
+.contenedor{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.boton1{
+	height: 38px;
+	background-color: #E8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+}
+
+/*Emcabezado*/
+header{
+	background-color: #24282B;
+	color: #fff;
+	padding: 10px;
+	min-height: 10px;
+	border-bottom: 10px solid #1293D4;
+}
+header a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #marca{
+	float: left;
+}
+header #marca h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	margin-top:  0px;
+}
+header .resaltado, header .actual a{
+	color: #1293D4;
+	font-weight: bold;
+}
+header a:hover{
+	color: #ccc;
+	font-weight: bold;
+}
+/*Cabecera con imagen*/
+#cabecera{
+  min-height: 350px;
+  background: url('../img/movistar1.1.jpg')no-repeat 0 ;
+  text-align: center;
+  margin-top: 10px;
+}
+#cabecera h1{
+	margin-top: 200px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+#cabecera p{
+	font-size: 20px;
+}
+#boletin{
+	color: #fff;
+	background: #24282B;
+}
+#boletin h1{
+	float: left;;
+}
+#boletin form{
+	float: right;
+	margin-top: 15px;
+
+}
+#boletin input[type="buscar"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+/*cajas*/
+#cajas{
+	margin-top: 20px;
+}
+#cajas .caja{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+#cajas .caja img{
+	width: 90px;
+}
+/*footer*/
+footer{
+	padding: -10px;
+	margin-top: 255px;
+	color: #fff;
+	background-color: #1293D4;
+	text-align: center;
+}
+/*tabla*/
+table{
+	background-color: white;
+	border-collapse: collapse; 
+	text-align: left;
+	width: 100%;
+}
+th,td{
+	border: solid 1px black;
+	padding: 0;
+}
+@media(max-width: 768px){
+	header #marca,
+	header nav,
+	header nav li,
+	#boletin h1,
+	#boletin form,
+	#cajas .caja,
+	article#main-col,
+    #cabecera,
+	aside#lateral{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 20px;
+	}
+	#boletin h1{
+		margin-top: 40px;
+	}
+	#boletin button{
+		display: block;
+		width: 100%;
+	}
+	#boletin form input[type="buscar"]{
+		width: 100%;
+		margin-top: 5px;
+	}
+	input{
+		width: 98%;
+	}
+}
+.form{
+	position: relative;
+	width: 500px;
+	height: 600px;
+	padding-left: 20px;
+	padding-top: 15;
+	background-color: #e5dfcd;
+	border-radius: 20px;
+	margin: auto;
 }
